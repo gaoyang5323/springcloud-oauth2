@@ -1,0 +1,14 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: MECHANT
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://localhost:8082/member
+      prefer-token-info: false

@@ -1,0 +1,18 @@
+server:
+  port: 80
+spring:
+  application:
+    name: ZUUL
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka
+zuul:
+  #routes:
+  #  MECHANT:
+  #    service-id: MECHANT
+  #    path: /mechant/**
+  strip-prefix: true    #当为false时,请求地址->MECHANT->http://localhost:8081/api/mechant/ping,返回404
+  prefix: /api          #请求前缀
+  sensitive-headers:   #此处不写则无法携带header;如果客户端在发请求是带了X-ABC，那么X-ABC不会传递给下游服务
+  #ignoredHeaders: X-ABC    #如果客户端在发请求是带了X-ABC，那么X-ABC依然会传递给下游服务。但是如果下游服务再转发就会被过滤
