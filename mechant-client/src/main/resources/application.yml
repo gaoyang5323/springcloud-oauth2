@@ -7,8 +7,13 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8080/eureka
+#配置向认证服务器认证权限
 security:
   oauth2:
+    client:
+      client-id: client3-password
+      client-secret: 123
+      access-token-uri: http://localhost:8082/oauth/token
+      user-authorization-uri: http://localhost:8082/oauth/authorize
     resource:
-      user-info-uri: http://localhost:8082/member
-      prefer-token-info: false
+      token-info-uri: http://localhost:8082/oauth/check_token
