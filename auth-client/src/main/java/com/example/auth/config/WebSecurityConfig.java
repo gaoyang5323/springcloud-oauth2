@@ -55,18 +55,21 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 //此处不要禁止formLogin,code模式测试需要开启表单登陆,并且/oauth/token不要放开或放入下面ignoring,因为获取token首先需要登陆状态
-                .formLogin()
+                .formLogin().loginPage("/authentication/require")
+                .loginProcessingUrl("/authentication/form")
+                .passwordParameter("password")
+                .usernameParameter("username")
                 .and()
                 .csrf().disable()
 
-                .authorizeRequests().antMatchers("/test").permitAll()
+                .authorizeRequests().antMatchers("/test","/authentication/require","/ologin").permitAll()
                 .and()
                 .authorizeRequests().anyRequest().authenticated();
     }
 
-    //设置不拦截资源服务器的认证请求,我测试时候不加这个也不会拦截
     @Override
     public void configure(WebSecurity web) throws Exception {
         web.ignoring().antMatchers("/oauth/check_token");
     }
+
 }

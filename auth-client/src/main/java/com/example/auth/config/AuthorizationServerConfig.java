@@ -3,14 +3,22 @@ package com.example.auth.config;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.oauth2.common.DefaultOAuth2AccessToken;
+import org.springframework.security.oauth2.common.OAuth2AccessToken;
 import org.springframework.security.oauth2.config.annotation.configurers.ClientDetailsServiceConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
+import org.springframework.security.oauth2.provider.OAuth2Authentication;
+import org.springframework.security.oauth2.provider.token.TokenEnhancer;
 import org.springframework.security.oauth2.provider.token.store.InMemoryTokenStore;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 /**
  * @author: gaoyang
@@ -49,7 +57,11 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 .and()
                 .withClient("client3-password")
                 .secret(bCryptPasswordEncoder.encode("123"))
-                .authorizedGrantTypes("password")
+                //设置token有效期
+                .accessTokenValiditySeconds(7 * 24 * 3600)
+                //设置refreshToken有效期
+                .refreshTokenValiditySeconds(7 * 24 * 3600)
+                .authorizedGrantTypes("password", "refresh_token")
                 .scopes("app")
                 .resourceIds("mechant")
 
@@ -58,6 +70,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 .authorizedGrantTypes("implicit")
                 .scopes("app")
                 .resourceIds("mechant");
+
     }
 
     //配置token仓库
@@ -67,14 +80,33 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
         endpoints.authenticationManager(authenticationManager)
                 //这里使用内存存储token,也可以使用redis和数据库
                 .tokenStore(new InMemoryTokenStore());
+        endpoints.allowedTokenEndpointRequestMethods(HttpMethod.GET, HttpMethod.POST);
+        endpoints.tokenEnhancer(new TokenEnhancer() {
+            @Override
+            public OAuth2AccessToken enhance(OAuth2AccessToken oAuth2AccessToken, OAuth2Authentication oAuth2Authentication) {
+                //在返回token的时候可以加上一些自定义数据
+                DefaultOAuth2AccessToken token = (DefaultOAuth2AccessToken) oAuth2AccessToken;
+                Map<String, Object> map = new LinkedHashMap<>();
+                map.put("nickname", "测试姓名");
+                token.setAdditionalInformation(map);
+                return token;
+            }
+        });
+
+        // 这里可以替换code模式等uri地址
+        //endpoints.pathMapping("/oauth/confirm_access","/custom/confirm_access");
     }
 
     //配置token状态查询
     @Override
-    public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
+    public void configure(final AuthorizationServerSecurityConfigurer oauthServer) throws Exception {
+        //配置允许认证的权限
+        oauthServer.tokenKeyAccess("permitAll()").checkTokenAccess("isAuthenticated()");
         //开启支持通过表单方式提交client_id和client_secret,否则请求时以basic auth方式,头信息传递Authorization发送请求
-        security.allowFormAuthenticationForClients();
+        oauthServer.allowFormAuthenticationForClients();
+
     }
+
 
     //以下数据库配置
     /**

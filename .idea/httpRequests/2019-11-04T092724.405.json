@@ -1,0 +1,7 @@
+{
+  "timestamp": "2019-11-04T01:27:24.455+0000",
+  "status": 405,
+  "error": "Method Not Allowed",
+  "message": "Request method 'GET' not supported",
+  "path": "/oauth/token"
+}

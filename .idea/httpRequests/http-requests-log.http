@@ -1,0 +1,72 @@
+GET http://localhost:8082/oauth/token?=&username=user&password=123&grant_type=password&client_secret=123&client_id=client3-password
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-04T092724.405.json
+
+###
+
+POST http://localhost:8082/oauth/token?=&username=user&password=123&grant_type=password&client_secret=123&client_id=client3-password
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-04T092718.405.json
+
+###
+
+POST http://localhost:8082/oauth/token?=&username=user&password=123&grant_type=password&client_secret=123&client_id=client3-password
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-04T092716.405.json
+
+###
+
+POST http://localhost:8082/oauth/token?=&username=user&password=123&grant_type=password&client_secret=123&client_id=client3-password
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-04T091714.200.json
+
+###
+
+POST http://localhost:8082/oauth/token?=&username=user&password=123&grant_type=password&client_secret=123&client_id=client3-password
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-04T091713-1.200.json
+
+###
+
+POST http://localhost:8082/oauth/token?=&username=user&password=123&grant_type=password&client_secret=123&client_id=client3-password
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-04T091713.200.json
+
+###
+
+POST http://localhost:8082/oauth/token?=&username=user&password=123&grant_type=password&client_secret=123&client_id=client3-password
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-04T091711.200.json
+
+###
+
+POST http://localhost:8082/oauth/token?=&username=user&password=123&grant_type=password&client_secret=123&client_id=client3-password
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-04T091703.200.json
+
+###
+
+POST http://localhost:8082/oauth/token?=&username=user&password=123&grant_type=password&client_secret=123&client_id=client3-password
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-04T091518.200.json
+
+###
+

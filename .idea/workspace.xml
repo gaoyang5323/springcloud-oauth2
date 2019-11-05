@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="62c024dd-fb66-420c-a555-31fb94925895" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/excepthandler/RestControllerExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/oath2CustomResult/CustomResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/oauth2Controller/Oauth2Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-client/src/main/resources/templates/demo-binding.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-client/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-client/src/main/resources/templates/oauthGrant.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-client/src/main/resources/templates/oauthLogin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/example/zuul/config/OauthConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/example/zuul/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zuul/src/main/java/com/example/zuul/feignclient/MyClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/AuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/AuthApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/config/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/config/AuthorizationServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-client/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mechant-client/src/main/java/com/kakuiwong/mechant/web/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mechant-client/src/main/java/com/kakuiwong/mechant/web/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/java/com/example/zuul/ZuulApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/src/main/java/com/example/zuul/ZuulApplication.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/auth-client/target/" />
+    <ignored path="$PROJECT_DIR$/eureka-server/target/" />
+    <ignored path="$PROJECT_DIR$/mechant-client/target/" />
+    <ignored path="$PROJECT_DIR$/zuul/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/main$ZuulApplication.ic" NAME="ZuulApplication Coverage Results" MODIFIED="1572916978954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1552067008">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="9" />
+          <entry key="HTML" value="11" />
+          <entry key="JAVA" value="42" />
+          <entry key="XML" value="12" />
+          <entry key="YAML" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="83" />
+          <entry key="JAVA" value="1186" />
+          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="XML" value="6" />
+          <entry key="YAML" value="28" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="main" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>secu</find>
+      <find>security</find>
+    </findStrings>
+    <dirStrings>
+      <dir>C:\java\springcloud-oauth2-demo\zuul</dir>
+      <dir>C:\java\springcloud-oauth2-demo\auth-client\src\main\resources\views</dir>
+      <dir>C:\java\springcloud-oauth2-demo\auth-client\src\main\java\com\example\auth\oauth2Controller</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/OathCustomResult/CustomResult.java" />
+        <option value="$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/excepthandler/RequestExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/excepthandler/RestControllerExceptionAdvice.java" />
+        <option value="$PROJECT_DIR$/zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/zuul/src/main/java/com/example/zuul/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/zuul/src/main/java/com/example/zuul/feignclient/MyClient.java" />
+        <option value="$PROJECT_DIR$/mechant-client/src/main/java/com/kakuiwong/mechant/web/TestController.java" />
+        <option value="$PROJECT_DIR$/zuul/src/main/java/com/example/zuul/ZuulApplication.java" />
+        <option value="$PROJECT_DIR$/zuul/src/main/java/com/example/zuul/config/OauthConfig.java" />
+        <option value="$PROJECT_DIR$/auth-client/src/main/resources/views/base-grant.html" />
+        <option value="$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/config/AuthorizationServerConfig.java" />
+        <option value="$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/oauth2Controller/LogoutController.java" />
+        <option value="$PROJECT_DIR$/auth-client/pom.xml" />
+        <option value="$PROJECT_DIR$/auth-client/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/auth-client/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/AuthApplication.java" />
+        <option value="$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/auth-client/src/main/resources/templates/oauthLogin.html" />
+        <option value="$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/oauth2Controller/Oauth2Controller.java" />
+        <option value="$PROJECT_DIR$/auth-client/src/main/resources/templates/oauthGrant.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\java\repository" />
+        <option name="mavenHome" value="C:/soft/maven" />
+        <option name="userSettingsFile" value="C:\java\repository\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="375" />
+    <option name="y" value="158" />
+    <option name="width" value="1439" />
+    <option name="height" value="829" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="main" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-oauth2-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572921703313" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="last.edited.regexp" value="Sample Text" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="org.infernus.idea.checkstyle.CheckStyleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.zuul.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\java\springcloud-oauth2-demo\auth-client\src\main\java\com\example\auth\oauth2Controller" />
+      <recent name="C:\java\springcloud-oauth2-demo\auth-client\src\main\resources\views" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8082" />
+          <option name="urlPath" value="/oauth/token" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="user" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="123" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="grant_type" />
+                <option name="value" value="password" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="client_secret" />
+                <option name="value" value="123" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="client_id" />
+                <option name="value" value="client3-password" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8082" />
+          <option name="urlPath" value="/oauth/token" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="" />
+                <option name="value" value="" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="user" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="123" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="grant_type" />
+                <option name="value" value="password" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="client_secret" />
+                <option name="value" value="123" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="client_id" />
+                <option name="value" value="client3-password" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.AuthApplication">
+    <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.auth.AuthApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MechantApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mechant" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kakuiwong.mechant.MechantApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerEurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="server_eureka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kakuiwong.server_eureka.ServerEurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="zuul" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.zuul.ZuulApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.AuthApplication" />
+      <item itemvalue="Spring Boot.ServerEurekaApplication" />
+      <item itemvalue="Spring Boot.MechantApplication" />
+      <item itemvalue="Spring Boot.ZuulApplication" />
+    </list>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="NONE" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62c024dd-fb66-420c-a555-31fb94925895" name="Default Changelist" comment="" />
+      <created>1572829953884</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572829953884</updated>
+      <workItem from="1572829956958" duration="3172000" />
+      <workItem from="1572834570844" duration="2668000" />
+      <workItem from="1572916781078" duration="1483000" />
+      <workItem from="1572918411778" duration="3315000" />
+      <workItem from="1572921992583" duration="746000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11384000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49551857" visible="true" weight="0.22026667" />
+      <window_info id="Structure" order="1" sideWeight="0.50301206" side_tool="true" weight="0.22814499" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.50448143" side_tool="true" weight="0.2176" />
+      <window_info id="Web" order="7" sideWeight="0.50301206" side_tool="true" weight="0.22814499" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.3297062" />
+      <window_info anchor="bottom" id="Problems" order="1" sideWeight="0.49946696" weight="0.3297062" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.3297062" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.4946695" weight="0.15686275" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" x="22" y="439" width="1876" height="162" id="Debug" order="7" sideWeight="0.4936034" weight="0.14705883" />
+      <window_info anchor="bottom" id="TODO" order="8" weight="0.3297062" />
+      <window_info anchor="bottom" id="Spring" order="9" sideWeight="0.4989339" weight="0.3297062" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" visible="true" weight="0.3278867" />
+      <window_info anchor="bottom" id="Docker" order="11" weight="0.3297062" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5063966" side_tool="true" weight="0.16757345" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.15016322" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.2850925" />
+      <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" weight="0.3297062" />
+      <window_info anchor="bottom" id="Version Control" order="16" show_stripe_button="false" weight="0.40369967" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="17" />
+      <window_info anchor="bottom" id="REST Client" order="18" weight="0.22766885" />
+      <window_info anchor="bottom" id="CheckStyle" order="19" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Bean Validation" order="8" weight="0.32995737" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" visible="true" weight="0.32995737" />
+      <window_info anchor="right" id="Maven Projects" order="10" weight="0.23933902" />
+      <window_info anchor="right" id="Key Promoter X" order="11" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/oath2CustomResult/CustomResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE.jar!/org/springframework/security/oauth2/common/exceptions/InvalidGrantException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE.jar!/org/springframework/security/oauth2/common/exceptions/ClientAuthenticationException.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE.jar!/org/springframework/security/oauth2/common/exceptions/OAuth2Exception.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="97" column="9" lean-forward="true" selection-start-line="77" selection-start-column="8" selection-end-line="97" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/excepthandler/RestControllerExceptionAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="70" lean-forward="true" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE.jar!/org/springframework/security/oauth2/config/annotation/web/configuration/AuthorizationServerConfigurer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE.jar!/org/springframework/security/oauth2/config/annotation/web/configuration/AuthorizationServerConfigurerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="11" column="74" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-869" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="26" column="55" lean-forward="true" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/example/zuul/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/example/zuul/feignclient/MyClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/example/zuul/ZuulApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mechant-client/src/main/java/com/kakuiwong/mechant/web/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mechant-client/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul/src/main/java/com/example/zuul/config/OauthConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-client/src/main/resources/views/base-grant.html" />
+    <entry file="file://$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/oauth2Controller/LogoutController.java" />
+    <entry file="file://$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/oauth2Controller/UserController.java" />
+    <entry file="file://$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/config/AuthorizationServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-156">
+          <caret line="63" column="66" lean-forward="true" selection-start-line="63" selection-start-column="66" selection-end-line="63" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.4.RELEASE/spring-boot-2.1.4.RELEASE.jar!/org/springframework/boot/context/ContextIdApplicationContextInitializer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.4.RELEASE/spring-boot-autoconfigure-2.1.4.RELEASE.jar!/org/springframework/boot/autoconfigure/thymeleaf/ThymeleafProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="75" column="23" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-client/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-client/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/AuthApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-client/src/main/resources/templates/oauthLogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="679">
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-client/src/main/resources/templates/oauthGrant.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="43" column="50" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth-client/src/main/java/com/example/auth/oauth2Controller/Oauth2Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.4257732" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

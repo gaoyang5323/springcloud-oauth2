@@ -3,6 +3,9 @@ server:
 spring:
   application:
     name: AUTH
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
 eureka:
   client:
     service-url:

@@ -19,5 +19,4 @@ public class TestController {
     public Object noauth() {
         return "noauth";
     }
-
 }
